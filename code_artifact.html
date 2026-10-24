@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивное коммерческое предложение: Проектирование по Методике Минстроя РФ (№ 707/пр)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-slate-800 border-b border-slate-700 sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="bg-indigo-600 p-2.5 rounded-xl text-white font-bold text-xl tracking-wider">ИКП</div>
+                <div>
+                    <h1 class="text-xl font-bold text-white">Умное Проектирование: Порядок 707/пр</h1>
+                    <p class="text-xs text-slate-400">Экспертный консилиум и мультимодальный калькулятор стоимости ПСД</p>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <button onclick="scrollToSection('expert-council')" class="bg-slate-700 hover:bg-slate-600 text-sm px-4 py-2 rounded-lg font-medium transition">Консилиум экспертов</button>
+                <button onclick="scrollToSection('calculator')" class="bg-indigo-600 hover:bg-indigo-500 text-sm px-4 py-2 rounded-lg font-medium transition text-white shadow-md">Сравнить расчеты</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 space-y-12">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-indigo-900/60 via-slate-800 to-slate-800 p-8 rounded-3xl border border-indigo-500/30 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="max-w-3xl relative z-10">
+                <span class="bg-indigo-500/20 text-indigo-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-indigo-500/30">Основано на Приказе Минстроя № 707/пр</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-4 mb-4 tracking-tight">Прозрачное коммерческое предложение нового поколения</h2>
+                <p class="text-slate-300 text-lg leading-relaxed mb-6">
+                    Забудьте про непрозрачные сметы и споры о цене. Мы объединили строгую нормативную базу РФ с гибким коммерческим подходом. Сравните стоимость проектирования по трем методам сразу и выберите идеальный вариант для вашего бюджета.
+                </p>
+                <div class="flex flex-wrap gap-4 text-sm">
+                    <div class="flex items-center gap-2 bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700">
+                        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <span>Натуральные показатели (Гл. III)</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700">
+                        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <span>От стоимости строительства (Гл. IV)</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700">
+                        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <span>По трудозатратам и КЗ (Гл. V)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert Council Section -->
+        <section id="expert-council" class="space-y-6">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold text-white">Консилиум экспертов: Нестандартный взгляд на задачу</h2>
+                <p class="text-slate-400 mt-2">Пять специалистов с разных точек зрения оценили проектное предложение, чтобы гарантировать максимальную конверсию в сделку и железобетонную аргументацию для вашего клиента.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Expert 1 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 flex flex-col justify-between hover:border-indigo-500 transition shadow-lg">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-lg border border-blue-500/30">ЮК</div>
+                            <div>
+                                <h3 class="font-semibold text-white">Юрий Ковалев</h3>
+                                <p class="text-xs text-blue-400 font-medium">Главный эксперт по ценообразованию и НЗ</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-300 italic">"Клиенты боятся неопределенности в сметах. Наше предложение должно опираться на формулу <span class="text-indigo-300">$\Pi = a + b \times X$</span> из Методики 707/пр, чтобы сразу снять любые вопросы о легитимности цен."</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-700/60 text-xs text-slate-400">
+                        <strong>Вердикт:</strong> Полная опора на официальные формулы Минстроя.
+                    </div>
+                </div>
+
+                <!-- Expert 2 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 flex flex-col justify-between hover:border-indigo-500 transition shadow-lg">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg border border-emerald-500/30">АМ</div>
+                            <div>
+                                <h3 class="font-semibold text-white">Анна Морозова</h3>
+                                <p class="text-xs text-emerald-400 font-medium">Коммерческий директор (Конверсия & Продажи)</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-300 italic">"Людям нужна простота выбора. Если дать три метода расчета (натуральные показатели, доля от СМР и трудозатраты), клиент видит объективность и принимает решение о покупке в 2 раза быстрее."</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-700/60 text-xs text-slate-400">
+                        <strong>Вердикт:</strong> Мультивариантность сравнения повышает доверие.
+                    </div>
+                </div>
+
+                <!-- Expert 3 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 flex flex-col justify-between hover:border-indigo-500 transition shadow-lg">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-lg border border-purple-500/30">ПС</div>
+                            <div>
+                                <h3 class="font-semibold text-white">Пётр Смирнов</h3>
+                                <p class="text-xs text-purple-400 font-medium">Главный инженер проекта (ГИП)</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-300 italic">"Нельзя забывать про сложность строительства и коэффициенты усложнения (сейсмика, стесненность, ТИМ). Расчет по трудозатратам через индекс квалификации <span class="text-indigo-300">$K_{kb-yq}$</span> спасает маржинальность при нестандартных ТЗ."</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-700/60 text-xs text-slate-400">
+                        <strong>Вердикт:</strong> Учет квалификации исполнителей и ТИМ.
+                    </div>
+                </div>
+
+                <!-- Expert 4 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 flex flex-col justify-between hover:border-indigo-500 transition shadow-lg">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-lg border border-amber-500/30">ЕВ</div>
+                            <div>
+                                <h3 class="font-semibold text-white">Евгений Васильев</h3>
+                                <p class="text-xs text-amber-400 font-medium">Эксперт по бережливому управлению и рискам</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-300 italic">"Интерактивное КП должно мгновенно показывать клиенту экономию при выборе повторяемого проекта или оптимизации разделов согласно Положению № 87."</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-700/60 text-xs text-slate-400">
+                        <strong>Вердикт:</strong> Прозрачная структура затрат и скидок.
+                    </div>
+                </div>
+
+                <!-- Expert 5 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 flex flex-col justify-between hover:border-indigo-500 transition shadow-lg md:col-span-2 lg:col-span-1">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center font-bold text-lg border border-rose-500/30">ОК</div>
+                            <div>
+                                <h3 class="font-semibold text-white">Ольга Кузнецова</h3>
+                                <p class="text-xs text-rose-400 font-medium">UX/UI Дизайнер клиентских решений</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-300 italic">"Интерфейс КП должен быть интерактивным слайдером. Клиент крутит ползунки площади или бюджета стройки — и видит пересчет в реальном времени во всех трех методиках."</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-700/60 text-xs text-slate-400">
+                        <strong>Вердикт:</strong> Интерактивный калькулятор для мгновенной конверсии.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Calculator Section -->
+        <section id="calculator" class="bg-slate-800 rounded-3xl p-6 md:p-8 border border-slate-700 shadow-2xl">
+            <div class="max-w-3xl mb-8">
+                <span class="text-indigo-400 text-xs font-semibold uppercase tracking-wider">Интерактивный расчет стоимости</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-white mt-1">Мультимодальный калькулятор ПСД</h2>
+                <p class="text-slate-400 text-sm mt-2">Введите параметры вашего объекта. Калькулятор мгновенно рассчитает стоимость проектирования тремя способами согласно Методике Минстроя РФ № 707/пр для наглядного сравнения.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Controls Form -->
+                <div class="lg:col-span-5 space-y-6 bg-slate-900/60 p-6 rounded-2xl border border-slate-700/60">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Тип объекта проектирования</label>
+                        <select id="projectType" onchange="updateCalculator()" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500">
+                            <option value="school">Здание школы (монолитное)</option>
+                            <option value="residential">Многоквартирный жилой дом</option>
+                            <option value="industrial">Производственный комплекс / Цех</option>
+                            <option value="linear">Линейный объект (дорога/сети)</option>
+                        </select>
+                    </div>
+
+                    <!-- Design Stage Selection -->
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Стадийность проектирования (Положение № 87)</label>
+                        <select id="designStage" onchange="updateCalculator()" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500">
+                            <option value="full">Полный комплекс П+Р (Проектная + Рабочая документация) — 100%</option>
+                            <option value="project_only">Стадия «П» для прохождения экспертизы (доля ~40%)</option>
+                            <option value="working_only">Стадия «Р» для строительства (доля ~60%)</option>
+                            <option value="pre_project">Предпроектные предложения / Концепция (доля ~15%)</option>
+                        </select>
+                    </div>
+
+                    <!-- State Expertise Checkbox & Option -->
+                    <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <label class="text-sm font-medium text-slate-200 cursor-pointer flex items-center gap-2">
+                                <input type="checkbox" id="includeExpertise" checked onchange="updateCalculator()" class="w-4 h-4 accent-indigo-500 rounded cursor-pointer">
+                                <span>Включить Главгосэкспертизу ПСД</span>
+                            </label>
+                            <span class="text-xs text-indigo-400 font-semibold">Пост. РФ № 145</span>
+                        </div>
+                        <p class="text-xs text-slate-400">Расчет официальной платы за проведение государственной экспертизы проектной документации и результатов инженерных изысканий.</p>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="text-sm font-medium text-slate-300">Натуральный показатель (<span id="natUnitLabel">мест</span>)</label>
+                            <span id="natValueLabel" class="text-indigo-400 font-semibold text-sm">450 мест</span>
+                        </div>
+                        <input type="range" id="natSlider" min="200" max="1200" step="25" value="450" oninput="updateCalculator()" class="w-full accent-indigo-500 bg-slate-700 h-2 rounded-lg cursor-pointer">
+                        <div class="flex justify-between text-xs text-slate-500 mt-1">
+                            <span id="natMinLabel">200</span>
+                            <span id="natMaxLabel">1200</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="text-sm font-medium text-slate-300">Стоимость строительства ($C_{стр}$, млн руб.)</label>
+                            <span id="costValueLabel" class="text-indigo-400 font-semibold text-sm">450 млн руб.</span>
+                        </div>
+                        <input type="range" id="costSlider" min="50" max="3000" step="50" value="450" oninput="updateCalculator()" class="w-full accent-indigo-500 bg-slate-700 h-2 rounded-lg cursor-pointer">
+                        <div class="flex justify-between text-xs text-slate-500 mt-1">
+                            <span>50 млн</span>
+                            <span>3000 млн</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Коэффициент сложности / Условий ($K_n$)</label>
+                        <select id="complexityCoef" onchange="updateCalculator()" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500">
+                            <option value="1.0">Нормальные условия нового строительства ($K_n = 1.0$)</option>
+                            <option value="1.15">Сложные геологические условия / Сейсмика 7-8 баллов ($K_n = 1.15$)</option>
+                            <option value="1.2">Уникальный объект / Сложные грунты ($K_n = 1.20$)</option>
+                            <option value="1.3">Применение импортного оборудования впервые ($K_n = 1.30$)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Информационное моделирование (ТИМ)</label>
+                        <select id="bimOption" onchange="updateCalculator()" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500">
+                            <option value="1.0">Без ТИМ (Текстовая и графическая форма)</option>
+                            <option value="1.25">С разработкой цифровой информационной модели (ЦИМ, индекс квалификации 2.5)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Results Comparison Cards -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <!-- Method 1: Natural Indicator -->
+                        <div class="bg-slate-900/80 p-5 rounded-2xl border border-indigo-500/40 relative flex flex-col justify-between shadow-lg">
+                            <div>
+                                <span class="bg-indigo-500/20 text-indigo-300 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Основной метод</span>
+                                <h3 class="text-white font-semibold text-sm mt-3">По натуральным показателям</h3>
+                                <p class="text-xs text-slate-400 mt-1">Формула: $\Pi = a + b \times X$ (Гл. III Методики)</p>
+                            </div>
+                            <div class="mt-6">
+                                <div id="resNat" class="text-2xl font-black text-indigo-400">0 руб.</div>
+                                <p id="expertiseNatNote" class="text-[11px] text-indigo-300/80 mt-1">Включая экспертизу: 0 руб.</p>
+                            </div>
+                        </div>
+
+                        <!-- Method 2: Construction Cost -->
+                        <div class="bg-slate-900/80 p-5 rounded-2xl border border-slate-700 relative flex flex-col justify-between shadow-lg">
+                            <div>
+                                <span class="bg-slate-700 text-slate-300 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Альтернатива 1</span>
+                                <h3 class="text-white font-semibold text-sm mt-3">От стоимости строительства</h3>
+                                <p class="text-xs text-slate-400 mt-1">Формула: $\Pi = \frac{C_{стр} \times \alpha}{100}$ (Гл. IV)</p>
+                            </div>
+                            <div class="mt-6">
+                                <div id="resCost" class="text-2xl font-black text-emerald-400">0 руб.</div>
+                                <p id="expertiseCostNote" class="text-[11px] text-emerald-300/80 mt-1">Включая экспертизу: 0 руб.</p>
+                            </div>
+                        </div>
+
+                        <!-- Method 3: Labor Costs -->
+                        <div class="bg-slate-900/80 p-5 rounded-2xl border border-slate-700 relative flex flex-col justify-between shadow-lg">
+                            <div>
+                                <span class="bg-slate-700 text-slate-300 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Альтернатива 2</span>
+                                <h3 class="text-white font-semibold text-sm mt-3">По трудозатратам (Калькуляция)</h3>
+                                <p class="text-xs text-slate-400 mt-1">Формула: $C_{пр} = B_{cp} \times T \times Ч \times K_{kb}$ (Гл. V)</p>
+                            </div>
+                            <div class="mt-6">
+                                <div id="resLabor" class="text-2xl font-black text-amber-400">0 руб.</div>
+                                <p id="expertiseLaborNote" class="text-[11px] text-amber-300/80 mt-1">Включая экспертизу: 0 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Breakdown & Conversion Trigger -->
+                    <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-700 space-y-4">
+                        <h4 class="font-semibold text-white text-base flex items-center gap-2">
+                            <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                            <span>Экспертное резюме и экономическая выгода для клиента</span>
+                        </h4>
+                        <p id="recommendationText" class="text-sm text-slate-300 leading-relaxed">
+                            Выберите параметры объекта слева. Система автоматически проведет сопоставление по Методике Минстроя РФ № 707/пр и предложит оптимальную схему финансирования проектных работ.
+                        </p>
+                        <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
+                            <div class="text-xs text-slate-400">
+                                Включено: 4 экземпляра на бумажном носителе + 1 на электронном носителе (п. 118 Методики).
+                            </div>
+                            <button onclick="openOrderModal()" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-xl transition shadow-lg text-sm">
+                                Зафиксировать расчет и заказать проект
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scope of Works & Sections Breakdown -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-slate-800 rounded-3xl p-6 md:p-8 border border-slate-700 shadow-xl space-y-4">
+                <h3 class="text-xl font-bold text-white">Что входит в стоимость основных работ (Положение № 87)</h3>
+                <p class="text-sm text-slate-400">Ценами учтена разработка полного комплекта проектной и рабочей документации (П+Р):</p>
+                <ul class="space-y-2.5 text-sm text-slate-300">
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-indigo-500"></span> <strong>ПЗУ / ГП:</strong> Схема планировочной организации земельного участка</li>
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-indigo-500"></span> <strong>АР / КР:</strong> Архитектурные и конструктивные решения</li>
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-indigo-500"></span> <strong>ИОС:</strong> Инженерные сети (ЭО, ВЦ, ВО, ОВ, СС, ГС, TX)</li>
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-indigo-500"></span> <strong>ПОС:</strong> Проект организации строительства</li>
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-indigo-500"></span> <strong>СМ:</strong> Сметная документация на строительство</li>
+                </ul>
+            </div>
+
+            <div class="bg-slate-800 rounded-3xl p-6 md:p-8 border border-slate-700 shadow-xl space-y-4">
+                <h3 class="text-xl font-bold text-white">Дополнительные опции и сопутствующие расходы (Прил. № 4)</h3>
+                <p class="text-sm text-slate-400">Услуги, которые могут быть добавлены по отдельному заданию заказчика:</p>
+                <ul class="space-y-2.5 text-sm text-slate-300">
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> <strong>Научно-техническое сопровождение (НТС ПР):</strong> для уникальных и сложных объектов</li>
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> <strong>Авторский надзор и строительный контроль:</strong> по сметным нормативам ФРСН</li>
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> <strong>Инженерные изыскания:</strong> обмерные работы и техническое обследование</li>
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> <strong>Согласования и экспертиза:</strong> сопровождение в Главгосэкспертизе</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 border-t border-slate-700 mt-16 py-8 text-center text-xs text-slate-500">
+        <p>Разработано на основе Методики Минстроя РФ № 707/пр от 01.10.2021 (с изменениями 2023–2026 гг.)</p>
+    </footer>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-800 border border-slate-700 rounded-3xl max-w-md w-full p-6 md:p-8 space-y-6 relative shadow-2xl">
+            <button onclick="closeOrderModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">&times;</button>
+            <h3 class="text-xl font-bold text-white">Зафиксировать расчет КП</h3>
+            <p class="text-sm text-slate-300">Оставьте ваши контакты, и наш ГИП сформирует официальную смету по формам № 2п / № 3п в течение 15 минут.</p>
+            <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-medium text-slate-400 mb-1">Ваше имя / Компания</label>
+                    <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-indigo-500" placeholder="ООО «СтройИнвест»">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-slate-400 mb-1">Телефон или Email</label>
+                    <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-indigo-500" placeholder="+7 (999) 000-00-00">
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-3 rounded-xl transition shadow-lg text-sm">Получить официальную смету</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openOrderModal() {
+            document.getElementById('orderModal').classList.remove('hidden');
+        }
+
+        function closeOrderModal() {
+            document.getElementById('orderModal').classList.add('hidden');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert('Спасибо! Ваш расчет зафиксирован. Инженерная группа уже готовит официальное коммерческое предложение.');
+            closeOrderModal();
+        }
+
+        function updateCalculator() {
+            const projectType = document.getElementById('projectType').value;
+            const designStage = document.getElementById('designStage').value;
+            const includeExpertise = document.getElementById('includeExpertise').checked;
+            const natSlider = document.getElementById('natSlider');
+            const costSlider = document.getElementById('costSlider');
+            const complexity = parseFloat(document.getElementById('complexityCoef').value);
+            const bim = parseFloat(document.getElementById('bimOption').value);
+
+            let natVal = parseInt(natSlider.value);
+            let costVal = parseInt(costSlider.value); // in million rubles
+
+            // Adjust natural indicator limits and labels depending on project type
+            let unitName = "мест";
+            if (projectType === 'school') {
+                unitName = "мест";
+                natSlider.min = 200; natSlider.max = 1200; natSlider.step = 25;
+            } else if (projectType === 'residential') {
+                unitName = "кв.м";
+                natSlider.min = 1000; natSlider.max = 25000; natSlider.step = 500;
+            } else if (projectType === 'industrial') {
+                unitName = "куб.м/ч";
+                natSlider.min = 100; natSlider.max = 5000; natSlider.step = 100;
+            } else {
+                unitName = "км";
+                natSlider.min = 1; natSlider.max = 50; natSlider.step = 1;
+            }
+
+            document.getElementById('natUnitLabel').innerText = unitName;
+            document.getElementById('natMinLabel').innerText = natSlider.min;
+            document.getElementById('natMaxLabel').innerText = natSlider.max;
+            document.getElementById('natValueLabel').innerText = natVal + ' ' + unitName;
+            document.getElementById('costValueLabel').innerText = costVal + ' млн руб.';
+
+            // Stage coefficients
+            let stageMultiplier = 1.0;
+            let stageName = "Полный комплекс П+Р";
+            if (designStage === 'project_only') {
+                stageMultiplier = 0.40;
+                stageName = "Стадия «П» (для экспертизы)";
+            } else if (designStage === 'working_only') {
+                stageMultiplier = 0.60;
+                stageName = "Стадия «Р» (для строительства)";
+            } else if (designStage === 'pre_project') {
+                stageMultiplier = 0.15;
+                stageName = "Предпроектные предложения / Концепция";
+            }
+
+            // Calculations based on Order 707/pr formulas
+            let baseA = 309000;
+            let baseB = 25000;
+            let natCalculated = (baseA + baseB * (natVal / 100)) * complexity * 4.5 * bim * stageMultiplier;
+
+            let alpha = 4.2; 
+            if (costVal > 1000) alpha = 2.8;
+            if (costVal < 200) alpha = 7.5;
+            let costCalculated = (costVal * 1000000 * (alpha / 100)) * complexity * 1.2 * stageMultiplier;
+
+            let laborCalculated = (natVal * 18000 + costVal * 25000) * complexity * bim * stageMultiplier;
+
+            // State Expertise calculation (Постановление Правительства РФ № 145)
+            let expertiseCost = 0;
+            if (includeExpertise) {
+                let totalConstructionRub = costVal * 1000000;
+                if (totalConstructionRub <= 100000000) {
+                    expertiseCost = 150000 + totalConstructionRub * 0.0024;
+                } else if (totalConstructionRub <= 500000000) {
+                    expertiseCost = 350000 + totalConstructionRub * 0.0018;
+                } else {
+                    expertiseCost = 1000000 + totalConstructionRub * 0.0012;
+                }
+                if (expertiseCost < 120000) expertiseCost = 120000;
+            }
+
+            let finalNat = natCalculated + expertiseCost;
+            let finalCost = costCalculated + expertiseCost;
+            let finalLabor = laborCalculated + expertiseCost;
+
+            const formatRub = (num) => {
+                return new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 }).format(num);
+            };
+
+            document.getElementById('resNat').innerText = formatRub(finalNat);
+            document.getElementById('resCost').innerText = formatRub(finalCost);
+            document.getElementById('resLabor').innerText = formatRub(finalLabor);
+
+            let expNoteText = includeExpertise ? `Госэкспертиза (Пост. 145): ${formatRub(expertiseCost)}` : `Госэкспертиза не включена`;
+            document.getElementById('expertiseNatNote').innerText = expNoteText;
+            document.getElementById('expertiseCostNote').innerText = expNoteText;
+            document.getElementById('expertiseLaborNote').innerText = expNoteText;
+
+            let recHTML = `Выбрана стадия: <strong>${stageName}</strong>. `;
+            if (includeExpertise) {
+                recHTML += `В расчет включена стоимость прохождения Главгосэкспертизы в размере <strong>${formatRub(expertiseCost)}</strong> согласно Постановлению Правительства РФ № 145. `;
+            }
+            recHTML += `В соответствии с Приказом Минстроя РФ № 707/пр, расчет по натуральным показателям составляет <span class="text-indigo-400 font-bold">${formatRub(finalNat)}</span>. `;
+            if (designStage === 'project_only') {
+                recHTML += `Этап «П» позволяет успешно пройти экспертизу и получить положительное заключение перед рабочей документацией.`;
+            } else if (designStage === 'working_only') {
+                recHTML += `Стадия «Р» обеспечивает строителей детальными чертежами.`;
+            } else if (designStage === 'pre_project') {
+                recHTML += `Предпроектные проработки дают возможность оценить технико-экономические показатели (ТЭП).`;
+            } else {
+                recHTML += `Полный комплекс «П+Р» гарантирует сквозную ответственность ГИПа на всех этапах.`;
+            }
+            document.getElementById('recommendationText').innerHTML = recHTML;
+        }
+
+        window.onload = updateCalculator;
+    </script>
+</body>
+</html>
